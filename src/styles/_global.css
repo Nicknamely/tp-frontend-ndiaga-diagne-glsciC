@@ -1,0 +1,94 @@
+.dark {
+  /* color */
+  --blue: hsl(217, 81%, 76%);
+  --green: hsl(134, 58%, 73%);
+  --yellow: hsl(45, 86%, 82%);
+  --red: hsl(344, 78%, 74%);
+
+  /* body */
+  --background-pane: hsl(241, 29%, 17%);
+
+  /* sidebar floating */
+  --secondary-pane-1: hsl(241, 35%, 10%);
+  --secondary-pane-2: hsl(241, 31%, 13%);
+
+  /* Cards, modals, popups */
+  --surface-0: hsl(241, 22%, 26%);
+  --surface-1: hsl(241, 20%, 33%);
+  --surface-2: hsl(241, 18%, 40%);
+
+  /* Tooltips, dropdown menus, overlays */
+  --overlay-0: hsl(241, 12%, 48%);
+  --overlay-1: hsl(241, 10%, 53%);
+  --overlay-2: hsl(241, 8%, 58%);
+
+  /* typography */
+  --text: hsl(241, 26%, 84%);
+  --subtext-0: hsl(241, 18%, 75%);
+  --subtext-1: hsl(241, 21%, 80%);
+  --subtle: var(--overlay-1);
+  --links: var(--blue);
+  --success: var(--green);
+  --warnings: var(--yellow);
+  --errors: var(--red);
+  --tags-pills: var(--blue);
+}
+:root {
+  /* color */
+  --blue: hsl(204, 83%, 48%);
+  --green: hsl(117, 60%, 40%);
+  --yellow: hsl(30, 75%, 49%);
+  --red: hsl(352, 87%, 39%);
+
+  /* body */
+  --background-pane: hsl(222, 23%, 95%);
+
+  /* sidebar floating */
+  --secondary-pane-1: hsl(222, 20%, 93%);
+  --secondary-pane-2: hsl(222, 18%, 91%);
+
+  /* Cards, modals, popups */
+  --surface-0: hsl(222, 15%, 85%);
+  --surface-1: hsl(222, 18%, 80%);
+  --surface-2: hsl(222, 20%, 75%);
+
+  /* Tooltips, dropdown menus, overlays */
+  --overlay-0: hsl(222, 14%, 69%);
+  --overlay-1: hsl(222, 13%, 63%);
+  --overlay-2: hsl(222, 11%, 58%);
+
+  /* typography */
+  --text: hsl(222, 15%, 30%);
+  --subtext-0: hsl(222, 15%, 35%);
+  --subtext-1: hsl(222, 15%, 40%);
+  --subtle: var(--overlay-1);
+  --links: var(--blue);
+  --success: var(--green);
+  --warnings: var(--yellow);
+  --errors: var(--red);
+  --tags-pills: var(--blue);
+}
+
+body {
+  background: var(--background-pane);
+  background: linear-gradient(
+    90deg,
+    var(--background-pane) 0%,
+    var(--secondary-pane-2) 100%
+  );
+  color: var(--text);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+h1 {
+  color: var(--text);
+}
+h2,
+h3 {
+  color: var(--subtext-0);
+}
+a {
+  color: var(--links);
+}
