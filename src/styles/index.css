@@ -1,0 +1,38 @@
+header {
+  height: 55vh;
+  box-sizing: border-box;
+  padding: 4em;
+  width: 75%;
+  display: flex;
+  align-items: cneter;
+  justify-content: left;
+  /* border: 1px red solid; */
+}
+header * {
+  /* border: 1px red solid; */
+}
+header div {
+  box-sizing: content-box;
+  padding: 4em;
+}
+/* header h1 { translate: 356px 89px; } */
+main {
+  background-color: var(--secondary-pane-2);
+  width: 75%;
+  /* border: 1px red solid; */
+}
+section {
+  color: var(--text);
+  height: 500px;
+  padding: 4.5em;
+  display: flex;
+}
+/* #theme-switch { */
+/*   position: fixed; */
+/*   z-index: 1000; */
+/*   bottom: 1.6em; */
+/*   right: 1.6em; */
+/*   height: 4em; */
+/*   width: 4em; */
+/*   border-radius: 100%; */
+/* } */
