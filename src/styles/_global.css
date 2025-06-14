@@ -133,7 +133,7 @@ body {
 /* Header Styles */
 h1 {
   color: var(--text);
-  font-size: 5.4em;
+  font-size: 4em;
   font-weight: 300;
 }
 
@@ -187,12 +187,14 @@ button a {
 strong {
   font-weight: 900;
 }
+/* TODO: On hover: highlight (nav) */
 nav li {
   line-height: 2.2em;
   list-style: square;
-  font-size: 1.6em;
+  font-size: 1.1em;
 }
 
+/* TODO: center text; inspired by catppuccin's footer */
 /* Footer Styles */
 footer {
   background-color: var(--secondary-pane-1);
