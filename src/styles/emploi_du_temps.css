@@ -1,1 +1,119 @@
+@import url(./_global.css);
 /* TODO: center style wih same header as homepage.*/
+body {
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  height: 55vh;
+  box-sizing: border-box;
+  padding: 4em;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /* border: 1px red solid; */
+}
+header * {
+  /* border: 1px red solid; */
+}
+header div {
+  box-sizing: content-box;
+  padding: 3.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header nav {
+  /* padding-top: 5em; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* header h1 { translate: 356px 89px; } */
+main {
+  background-color: var(--secondary-pane-2);
+  width: 75%;
+  padding: 4.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  color: var(--text);
+  height: 500px;
+  padding: 4.5em;
+  display: flex;
+}
+
+/* Schedule Table Styles */
+.schedule {
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.schedule-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--surface-0);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table th {
+  background-color: var(--surface-1);
+  color: var(--text);
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 2px solid var(--overlay-0);
+  font-size: 1.1em;
+}
+
+.schedule-table td {
+  padding: 0.8rem;
+  text-align: center;
+  border-bottom: 1px solid var(--overlay-0);
+  font-size: 0.95em;
+}
+
+/* Alternating row colors */
+.schedule-table tbody tr:nth-child(even) {
+  background-color: var(--surface-0);
+}
+
+.schedule-table tbody tr:nth-child(odd) {
+  background-color: var(--surface-1);
+}
+
+.schedule-table tbody tr:hover {
+  background-color: var(--overlay-0);
+  transition: background-color 0.2s ease;
+}
+
+/* Time column styling */
+.schedule-table td:first-child {
+  font-weight: 600;
+  background-color: var(--surface-1);
+  border-right: 2px solid var(--overlay-0);
+}
+
+/* Empty cells styling */
+.schedule-table td:not(:first-child):empty {
+  background-color: var(--overlay-1);
+  opacity: 0.5;
+}

@@ -1,1 +1,77 @@
+@import url(./_global.css);
 /* TODO: Same tyle as homepage:*/
+
+header {
+  height: 55vh;
+  box-sizing: border-box;
+  padding: 4em;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+header * {
+  /* border: 1px red solid; */
+}
+
+header div {
+  box-sizing: content-box;
+  padding: 3.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  background-color: var(--secondary-pane-2);
+  width: 75%;
+  padding: 4.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+/* CV Overview Styles */
+.cv-overview {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--surface-1);
+  padding: 3em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.overview-content h2 {
+  color: var(--text);
+  margin-bottom: 1.5em;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.overview-text {
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.overview-text p {
+  margin-bottom: 1.5em;
+}
+
+.overview-text p:last-child {
+  margin-bottom: 0;
+}
+
+.overview-content .btn-1 {
+  margin-top: 2em;
+  align-self: center;
+}
