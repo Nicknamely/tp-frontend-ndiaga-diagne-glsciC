@@ -232,6 +232,42 @@ footer {
   height: 5em;
 }
 
+/* Header Styles */
+header {
+  height: 40vh;
+  box-sizing: border-box;
+  padding: 4em;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+header * {
+  /* border: 1px red solid; */
+}
+header div p {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+header div {
+  box-sizing: content-box;
+  padding: 3.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* Theme Switcher Button */
 #theme-switch {
   position: fixed;
