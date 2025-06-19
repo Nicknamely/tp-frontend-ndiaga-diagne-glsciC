@@ -143,7 +143,7 @@ h3 {
 }
 h2 {
   font-size: 2.5em;
-  font-weight: 300;
+  font-weight: 394;
 }
 
 /* Link Styles */
@@ -317,4 +317,15 @@ body:not(.dark) #theme-switch .light-icon {
 
 body:not(.dark) #theme-switch .dark-icon {
   display: none;
+}
+
+/* Emphasize class for languages and tools */
+.emph {
+  font-weight: 600;
+  color: var(--blue);
+  background: var(--surface-1);
+  letter-spacing: 0.02em;
+  font-family: inherit;
+  font-size: 1em;
+  display: inline-block;
 }
