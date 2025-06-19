@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Réservation de service</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="btn">Accueil</a>
+        <a href="services.html" class="btn">Services</a>
+        <a href="booking.html" class="btn">Réservation</a>
+        <a href="mailto:contact@automob.co.in" class="btn">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Réserver un service</h1>
+      <form action="appointment.html" method="post" autocomplete="off">
+        <label for="service">Service</label>
+        <select id="service" name="service" required>
+          <option value="">-- Choisissez un service --</option>
+          <option value="maintenance">Maintenance préventive</option>
+          <option value="carrosserie">Réparation de carrosserie</option>
+          <option value="soin">Soin automobile</option>
+        </select>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required />
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <button type="submit" class="btn">Prendre rendez-vous</button>
+      </form>
+    </main>
+    <footer>
+      &copy; 2025 AutoMob-Mécanicien. Projet Capstone 2.
+    </footer>
+  </body>
+</html> 

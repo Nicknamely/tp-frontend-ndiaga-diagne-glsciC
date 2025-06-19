@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planification de rendez-vous</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="btn">Accueil</a>
+        <a href="services.html" class="btn">Services</a>
+        <a href="booking.html" class="btn">Réservation</a>
+        <a href="mailto:contact@automob.co.in" class="btn">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Planification de rendez-vous</h1>
+      <form action="booking-success.html" method="post" autocomplete="off">
+        <label for="heure">Heure</label>
+        <input type="time" id="heure" name="heure" required />
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" name="telephone" required pattern="[0-9]{10}" />
+        <button type="submit" class="btn">Réserver</button>
+      </form>
+    </main>
+    <footer>
+      &copy; 2025 AutoMob-Mécanicien. Projet Capstone 2.
+    </footer>
+  </body>
+</html> 

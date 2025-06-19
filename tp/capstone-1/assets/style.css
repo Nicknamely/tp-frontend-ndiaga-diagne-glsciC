@@ -1,0 +1,102 @@
+/* Capstone 1 - Friendship Zone - Base Styles */
+:root {
+  --bg: #232634;
+  --fg: #cdd6f4;
+  --accent: #89b4fa;
+  --card: #313244;
+  --border: #45475a;
+  --btn-bg: #89b4fa;
+  --btn-fg: #232634;
+  --btn-hover: #b4befe;
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header, footer {
+  background: var(--card);
+  padding: 1em 2em;
+  border-bottom: 1px solid var(--border);
+}
+footer {
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.95em;
+  color: #a6adc8;
+}
+main {
+  flex: 1;
+  padding: 2em 1em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+h1, h2, h3 {
+  color: var(--accent);
+  margin-top: 0;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.5em;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  box-shadow: 0 2px 8px #0002;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  color: var(--fg);
+  margin-bottom: 2em;
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.75em 1em;
+  text-align: left;
+}
+th {
+  background: var(--accent);
+  color: var(--btn-fg);
+}
+tr:nth-child(even) {
+  background: #292c3c;
+}
+.btn {
+  display: inline-block;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  font-weight: 500;
+}
+.btn:hover, .btn:focus {
+  background: var(--btn-hover);
+}
+input, select, textarea {
+  background: #1e1e2e;
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 0.3em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  width: 100%;
+  font-size: 1em;
+}
+label {
+  display: block;
+  margin-bottom: 0.3em;
+  color: var(--accent);
+  font-weight: 500;
+}

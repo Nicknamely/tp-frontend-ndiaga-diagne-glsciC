@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friendship Zone - Inscription</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="btn">Accueil</a>
+        <a href="FriendList.html" class="btn" style="margin-left:1em;">Liste d'amis</a>
+      </nav>
+    </header>
+    <main>
+      <section class="card">
+        <h1>Inscription</h1>
+        <form action="RegistrationConfirmation.html" method="get" autocomplete="off">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" required />
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" required minlength="6" />
+          <button type="submit" class="btn">Register</button>
+        </form>
+        <form action="RegistrationConfirmationForAdmin.html" method="get" style="margin-top:1em;">
+          <button type="submit" class="btn">Register as Admin</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      &copy; 2025 Friendship Zone. Projet Capstone 1.
+    </footer>
+  </body>
+</html>
